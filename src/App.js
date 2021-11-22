@@ -9,11 +9,11 @@ import Supplier from './components/supplier/supplier';
 import Warranty from './components/warranty/warranty';
 import Service from './components/service/service';
 
-import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
+    <div>
  
        <Router>
          <Routes>
