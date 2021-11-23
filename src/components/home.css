@@ -1,4 +1,4 @@
-h1 {
+.topic {
     color: white;
     font-size: 55px;
     margin-top: 300px;
@@ -9,9 +9,11 @@ h1 {
 .login {
     margin-top: 490px;
     margin-left: 80px;
+    position: fixed;
 }
 
-body {
+.body-back {
     background-image: url(./images/658.jpg);
     background-size: cover;
+    height: 890px;
 }

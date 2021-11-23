@@ -5,8 +5,8 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <body>
-          <h1>Enterprise Asset Management<br/> System</h1>
+        <body className="body-back">
+          <h1 className="topic">Enterprise Asset Management<br/> System</h1>
           <a href="./dashboard"><button className="btn btn-light btn-lg login">Login</button></a>
         </body>
       </div>
