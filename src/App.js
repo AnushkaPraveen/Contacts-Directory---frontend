@@ -8,6 +8,7 @@ import Product from './components/product/product';
 import Supplier from './components/supplier/supplier';
 import Warranty from './components/warranty/warranty';
 import Service from './components/service/service';
+import Addproduct from './components/product/addproduct';
 
 
 
@@ -25,6 +26,7 @@ function App() {
        <Route path="/supplier" element={<Supplier/>}/>
        <Route path="/service" element={<Service/>}/>
        <Route path="/warranty" element={<Warranty/>}/>
+       <Route path="/addproduct" element={<Addproduct/>}/>
        </Routes>
        </Router>
  
