@@ -6,6 +6,9 @@ class Admin extends Component {
       <div>
         <h1 className="offset-2 mt-5">Admins</h1>
         <div className="container">
+        <div className="d-flex justify-content-end">
+               <a href="./addadmin"><button className="btn btn-primary">Add Admin</button></a>
+               </div>
           <table className="table offset-1">
             <thead className="thead-dark">
               <tr>

@@ -29,7 +29,7 @@ class Addproduct extends Component {
             </div>
           </div>
           <button className="btn btn-success mt-5">Create</button>
-          <a href="./product"><button className="btn btn-success mt-5 mx-4">Cancel</button></a>
+          <a href="./product"><button className="btn btn-danger mt-5 mx-4">Cancel</button></a>
         </div>
       </div>
     );
