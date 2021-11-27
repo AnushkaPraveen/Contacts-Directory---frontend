@@ -13,6 +13,7 @@ import Addadmin from './components/admin/addadmin';
 import Addservice from './components/service/addservice';
 import Addsupplier from './components/supplier/addsupplier';
 import Addwarranty from './components/warranty/addwarranty';
+import Addemployee from './components/employee/addemployee';
 
 
 
@@ -43,6 +44,8 @@ function App() {
        <Route path="/addservice" element={<Addservice/>}/>
        <Route path="/addsupplier" element={<Addsupplier/>}/>
        <Route path="/addwarranty" element={<Addwarranty/>}/>
+       <Route path="/addemployee" element={<Addemployee/>}/>
+
        </Routes>
        </Router>
  
