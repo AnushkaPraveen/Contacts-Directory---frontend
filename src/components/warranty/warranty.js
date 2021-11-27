@@ -19,7 +19,7 @@ class Warranty extends Component{
                 <th scope="col">Phone</th>
                 <th scope="col">Address</th>
                 <th scope="col">Warraty Time Period</th>
-                <th scope="col">Purchurse Date</th>
+                <th scope="col">Purchase Date</th>
               </tr>
             </thead>
             <tbody>

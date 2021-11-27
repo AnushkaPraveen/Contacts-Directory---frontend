@@ -1,6 +1,24 @@
 import React, { Component } from "react";
+import axios from 'axios';
 
 class Admin extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      admins:[],
+      name:"testname"
+    }
+  }
+
+componentDidMount(){
+this.getAdmin();
+}
+
+getAdmin=()=>{
+  axios.get("http://localhost:4000/admin")
+  .then((res)=>this.setState({admins:res.data}))
+}
+
   render() {
     return (
       <div>
@@ -15,27 +33,18 @@ class Admin extends Component {
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
-                <th scope="col">Handle</th>
+                
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <button className="btn btn-primary">test</button>
-                <button className="btn btn-primary">test</button>
-                
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <button className="btn btn-primary">test</button>
-                <button className="btn btn-primary">test</button>
-                
-              </tr>
-              
+              {this.state.admins.map((admin,index)=>(
+              <tr key={index}>
+                <td>{admin._id}</td>
+                <td>{admin.name}</td>
+                <td>{admin.email}</td>
+                <i className='bx bxs-trash bx-lg' style={{"color":"#f50808"}}></i>
+                <i className='bx bxs-edit  bx-lg' style={{'color':'#02b502'}}></i>
+              </tr>))}
             </tbody>
           </table>
         </div>
