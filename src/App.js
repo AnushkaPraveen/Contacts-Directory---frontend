@@ -20,7 +20,7 @@ import Addemployee from './components/employee/addemployee';
 function App() {
   return (
     <div>
-  <nav class="nav nav-pills flex-column position-fixed mt-5 mx-2">
+  {/* <nav class="nav nav-pills flex-column position-fixed mt-5 mx-2 dash-nav">
   <a class="nav-link" href="./dashboard">Dashboard</a>
   <a class="nav-item nav-link" href="./product">Product</a>
   <a class="nav-link" href="./admin">Admin</a>
@@ -28,7 +28,7 @@ function App() {
   <a class="nav-link" href="./supplier">Supplier</a>
   <a class="nav-link" href="./service">Service</a>
   <a class="nav-link" href="./warranty">Warranty</a>
-</nav>
+</nav> */}
        <Router>
          <Routes>
        <Route path="/" element={<Home/>}/>
